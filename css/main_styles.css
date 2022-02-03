@@ -1,0 +1,124 @@
+html,
+body {
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+.main-container {
+	padding: 5px;
+}
+
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapped {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.list-group {
+	border-collapse: collapse;
+}
+
+.list-group:last-child {
+	padding-right: 0;
+}
+
+.container-lvl-2 {
+	padding: 0 0 0 2rem;
+}
+
+.list-group-item {
+	position: relative;	
+	border-radius: 0;
+	margin: 2px 0;
+
+	padding: 0;
+	border: none;
+	background: transparent;
+
+}
+
+.list-group-item > .item-contents {
+	text-align: center;
+	border: 2px solid #000;
+	background-color: #a1bff5;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	user-select: none;
+}
+
+
+.locked > .item-contents {
+	background-color: #ff6d6d;
+}
+
+.item-contents.overlay-props {
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+
+.overlay-helper {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+	background: transparent;
+	/*background: rgb(0,0,0,0.3);*/
+	/*z-index: 100;*/
+}
+
+.collapse-toggle {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	text-align: center;
+	/*background-color: #000;*/
+
+}
+
+.collapse-toggle:before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: 140%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.collapse-toggle[data-action='collapse']:before {
+	content: "\2212";
+}
+
+.collapse-toggle[data-action='expand']:before {
+	content: '\002B';
+}
+

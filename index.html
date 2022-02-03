@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="format-detection" content="telephone=no">
+
+
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+
+		<title>Sortable Kiosk Demo</title>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/main_styles.css?ver=13" />
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/sortable.min.js"></script>
+		<script src="js/jquery-sortable.js"></script>
+
+		<script src="js/page_logic.js?ver=13"></script>
+
+
+	</head>
+	<body>
+		<main>
+			
+			<div class="main-container wrapped">
+				<div class="list-group container-lvl-1 col-4">
+					<div class="list-group-item">
+						<div class="item-contents">I am draggable</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Me too</div>
+					</div>
+					<div class="list-group-item locked">
+						<div class="item-contents">But I am not :(</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">I've got sub items</div>
+						<div class="list-group container-lvl-2 nested-sortable">
+							<div class="list-group-item">
+								<div class="item-contents">This one</div>
+							</div>
+							<div class="list-group-item">
+								<div class="item-contents">And this one</div>
+							</div>
+							<div class="list-group-item">
+								<div class="item-contents">We can be pulled out</div>
+							</div>
+							<div class="list-group-item">
+								<div class="item-contents">But not back again</div>
+							</div>
+						</div>
+						<div class="collapse-toggle" data-action="collapse"></div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Another main item</div>
+					</div>
+				</div>
+
+				<div class="list-group container-lvl-1 col-4">
+					<div class="list-group-item">
+						<div class="item-contents">If you click me</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">I'll close after 2 seconds</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">My sub items are not draggable</div>
+						<div class="list-group container-lvl-2 nested-sortable disabled-children-drag">
+							<div class="list-group-item locked">
+								<div class="item-contents">Agreed</div>
+							</div>
+							<div class="list-group-item">
+								<div class="item-contents">Can't be dragged</div>
+							</div>
+						</div>
+						<div class="collapse-toggle" data-action="collapse"></div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Yet another main item</div>
+					</div>
+				</div>
+
+				<div class="list-group container-lvl-1 col-4">
+					<div class="list-group-item">
+						<div class="item-contents">Additional item 1</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Additional item 2</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Additional item 3</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Additional item 4</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Additional item 5</div>
+					</div>
+					<div class="list-group-item">
+						<div class="item-contents">Additional item 6</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</main>
+
+		<div class="overlay-helper"></div>
+	</body>
+</html>
