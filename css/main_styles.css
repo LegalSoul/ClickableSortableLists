@@ -49,10 +49,18 @@ body {
 	padding: 0;
 	border: none;
 	background: transparent;
+	
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
 
 }
 
 .list-group-item > .item-contents {
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+
 	text-align: center;
 	border: 2px solid #000;
 	background-color: #a1bff5;
@@ -60,7 +68,7 @@ body {
 	padding-bottom: 0.75rem;
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
-	user-select: none;
+	cursor: default;
 }
 
 
@@ -100,6 +108,7 @@ body {
 	height: 20px;
 	display: block;
 	text-align: center;
+	cursor: pointer;
 	/*background-color: #000;*/
 
 }
